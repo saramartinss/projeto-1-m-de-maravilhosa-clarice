@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+/* NAVEGAÇÃO */
+
+html {
+  width: 420px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.menu {
+  background-color: #674582;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu__logo {
+  width: 200px;
+}
+
+.menu__itens {
+  display: none;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 56px;
+  background: url("../img/bg-banner-claro.png") no-repeat;
+  opacity: 0.8;
+  background-size: 100%;
+  height: 169px;
+  text-align: center;
+}
+
+.cabecalho__conteudo {
+  display: flex;
+  flex-direction: column;
+}
+.cabecalho__titulo {
+  font-size: 0.9rem;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.cabecalho__subtitulo {
+  font-size: 0.8rem;
+  padding: 0 70px;
+}
+
+
+
+
+.principal__mulheres img {
+  width: 100px;
+}
