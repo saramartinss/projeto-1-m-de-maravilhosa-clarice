@@ -4,6 +4,7 @@
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -18,6 +19,7 @@ body {
   border: 0;
   font-size: 10px;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #63458A;
 }
 
 .menu {
@@ -73,7 +75,6 @@ body {
 .cabecalho__btn {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
   font-weight: bold;
   margin: 0 auto;
   padding: 15px;
@@ -87,7 +88,6 @@ body {
 .principal__titulo {
   font-family: 'Roboto Slab';
   text-align: center;
-  color: #63458A;
   margin: 40px auto;
   font-size: 1.45rem;
 }
@@ -96,7 +96,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 70px;
+  padding: 0 15px;
   max-width: 95vw;
   margin: 0 auto;
 }
@@ -252,13 +252,177 @@ body {
 
 /* SEGUNDA PÁGINA */
 
-.topo {
-  border: 2px solid;
-  color: rgba(255, 255, 255, 1);
-  margin-top: 55px;
-  background: url("../img/bg-banner-claro.png") no-repeat;
+.menu {
+  background-color: #000;
+  opacity: .9;
+}
+.cabecalho__page2 {
+  background: url("../img/EstatuaClarice.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  opacity: .9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cabecalho h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+/* PERFIL DA CLARICE */
+
+.topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo__pagina {
+  font-family: 'Roboto Slab';
+  font-size: 1.5rem;
   text-align: center;
+}
+
+.topo__foto {
+  width: 150px;
+}
+
+.topo__conteudo {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+/* CITAÇÃO */
+
+.meio__citacao {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid rgb(208, 172, 255);
+  padding: 30px 15px;
+  margin: 0 20px;
+}
+
+.fim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.fim__titulo {
+  font-family: 'Roboto Slab';
+  margin: 20px 0 0 0;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+.fim__historia {
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.fim__foto {
+  width: 420px;
+  padding: 0 20px;
+}
+
+/* CRÉDITOS */
+
+.creditos {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #E4B7E5;
+  margin: 40px auto;
+  align-items: center;
+  height: ;
+  
+}
+
+.creditos__foto {
+  height: 140px;
+}
+.creditos__foto img {
+  width: ;
+  height: 140px;
+  margin-right: ;
+}
+
+.creditos__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.creditos__info p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #C083B9;
+  font-size: 1rem;
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+@media (min-width: 1024px) {
+  .topo__titulo, .meio__citacao, .fim__titulo {
+    font-size: 1.7rem;
+  }
+
+  .topo__conteudo, .fim__historia {
+    font-size: 1.4rem;
+  }
+
+  .creditos__info p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    width: 170px;
+  }
+
+  .menu a, .rodape__2-de-2 p {
+    font-size: 1rem;
+  }
+
+  .topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .meio__citacao {
+    margin: 40px 50px;
+  }
+
+  .fim {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cabecalho__page2 {
+    background-position-y: -100px;
+  }
 }
