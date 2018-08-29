@@ -382,6 +382,14 @@ body {
 
 
 @media (min-width: 1024px) {
+  .cabecalho__page2 {
+    background-position-y: -90px;
+  }
+  
+  .cabecalho__page2 h1 {
+    text-shadow: 0px 1px 1px #000;
+  }
+
   .topo__titulo, .meio__citacao, .fim__titulo {
     font-size: 1.7rem;
   }
@@ -423,6 +431,6 @@ body {
 
 @media (min-width: 1920px) {
   .cabecalho__page2 {
-    background-position-y: -100px;
+    background-position-y: 0px;
   }
 }
