@@ -252,24 +252,30 @@ body {
 
 /* SEGUNDA PÁGINA */
 
-.menu {
-  background-color: #000;
-  opacity: .9;
-}
 .cabecalho__page2 {
   background: url("../img/EstatuaClarice.jpg") no-repeat;
   background-size: cover;
-  background-position: center;
-  opacity: .9;
+  background-position: center;  
+}
+
+.cabecalho__page2 h1 {
+    text-shadow: 0px 1px 1px #000;
+}
+
+.filtro {
+  background-color: rgba(103, 69, 130, .6);
+  height: 75vh;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
+} 
 
 .cabecalho h1 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 2rem;
+  
 }
 
 /* PERFIL DA CLARICE */
@@ -284,10 +290,12 @@ body {
   font-family: 'Roboto Slab';
   font-size: 1.5rem;
   text-align: center;
+  margin: 0;
 }
 
 .topo__foto {
   width: 150px;
+  margin: 30px auto 15px auto;
 }
 
 .topo__conteudo {
@@ -343,8 +351,6 @@ body {
   background-color: #E4B7E5;
   margin: 40px auto;
   align-items: center;
-  height: ;
-  
 }
 
 .creditos__foto {
@@ -367,6 +373,10 @@ body {
   margin: 0;
 }
 
+.creditos__info a {
+  color: #63458A;
+}
+
 .btn {
   text-decoration: none;
   text-transform: uppercase;
@@ -384,10 +394,6 @@ body {
 @media (min-width: 1024px) {
   .cabecalho__page2 {
     background-position-y: -90px;
-  }
-  
-  .cabecalho__page2 h1 {
-    text-shadow: 0px 1px 1px #000;
   }
 
   .topo__titulo, .meio__citacao, .fim__titulo {
